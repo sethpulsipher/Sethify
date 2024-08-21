@@ -1,0 +1,22 @@
+{
+  "name": "sethifyv2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "tailwind:build": "npx tailwindcss -i ./input.css -o ./_site/css/styles.css",
+    "tailwind:watch": "npx tailwindcss -i ./input.css -o ./_site/css/styles.css --watch",
+    "eleventy:build": "npx eleventy",
+    "eleventy:watch": "npx eleventy --watch",
+    "eleventy:serve": "npx eleventy --serve",
+    "start": "concurrently \"npx tailwindcss -i ./input.css -o ./_site/css/styles.css --watch\" \"npx eleventy --serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "github:11ty/eleventy",
+    "concurrently": "^8.2.2",
+    "tailwindcss": "^3.4.10"
+  }
+}
