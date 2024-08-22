@@ -26,6 +26,11 @@ This is the repository for my personal website, designed to showcase my portfoli
 - **SEO Optimized**: Built with best practices to rank well on search engines.
 - **Markdown Support**: Write blog posts and pages using simple markdown.
 
+## Guide
+
+Basic Commands:
+`npm start` build/watch tailwind & serve eleventy 
+
 ## Installation
 
 To set up the project locally, follow these steps:
