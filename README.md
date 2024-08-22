@@ -29,7 +29,10 @@ This is the repository for my personal website, designed to showcase my portfoli
 ## Guide
 
 Basic Commands:
-`npm start` build/watch tailwind & serve eleventy 
+`npm start`
+```bash
+"start": "concurrently \"npx tailwindcss -i ./input.css -o ./_site/css/styles.css --watch\" \"npx eleventy --serve\""
+```
 
 ## Installation
 
