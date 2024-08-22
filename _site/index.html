@@ -10,25 +10,34 @@
     <title>Document</title>
   </head>
   
-  <body class="min-h-screen px-16 bg-slate-50 dark:bg-black dark:text-white font-serif text-lg">
+  <body class="min-h-screen flex flex-col bg-slate-50 dark:bg-black dark:text-white font-serif text-lg">
+    
+    <header class="w-full justify-between items-center sticky flex align-baseline bg-emerald-100 text-neutral-900 top-0 py-4 px-6">
+    
+    <a href="#">
+      <img src="/assets/svg/Full-Logo-Color.svg" alt="logo" class="h-12">
+    </a>
 
-    <header class="flex sticky align-baseline bg-emerald-800 text-neutral-200 top-2 mb-8 py-1 px-5 justify-between">
-      <div class="text-2xl font-semibold">Sethify</div>
-        <div class="text-end text-2xl">
-          <ul>
-            <li><a href="#" class="no-underline hover:underline">
-              Github</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
+    <nav>
 
+      <ul class="flex gap-10">
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
+
+        <li>
+          <a href="#">Github</a>
+        </li>
+      </ul>
+
+    </nav>
+
+</header>
+    
     <main>
       
-
   <!-- Intro -->
-<div class="row-auto bg-neutral-800 mb-10 px-5 py-10">
+<div class="row-auto bg-neutral-800 my-10 px-5 py-10">
   <h1 class="text-5xl font-bold mb-2 text-yellow-500">👋 Hi there, I'm Seth</h1>
   <p class="text-2xl">I'm a seasoned Full Stack Software Developer with a solid background in IT and a keen interest in cybersecurity. My passion for technology drives me to create and deliver cutting-edge web solutions, constantly pushing boundaries to explore new possibilities. With expertise in both front-end and back-end development, I excel at transforming ideas into reality through clean code and intuitive design.</p>
 </div>
@@ -184,9 +193,11 @@
   </div>
 </div>
     </main>
+    
+    <footer class="text-center mt-auto">
+    <p>Built with ♥ by <span><a href="https://www.sethify.com" class="underline">Sethify</a></span></p>
+    <small>Copyright &copy; 2024 | All rights reserved</small>
+</footer>
 
-    <footer class="text-center">
-      <p>Built with ♥ by <span><a href="https://www.sethify.com" class="underline">Sethify</a></span></p>
-    </footer>
   </body>
 </html>
