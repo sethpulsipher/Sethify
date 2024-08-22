@@ -1,7 +1,7 @@
 # My Website
 
 ![Website](https://img.shields.io/badge/Website-Live-brightgreen?style=flat-square&logo=html5)
-![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=flat-square)
+![Version](https://img.shields.io/badge/Version-2.0.0-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
 
 ## Table of Contents
