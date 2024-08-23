@@ -7,15 +7,16 @@
     <meta name="description" content="Fullstack Web Developer Portfolio">
 
     <link rel="stylesheet" href="/css/styles.css">
+    <script defer src="/assets/js/app.js"></script>
     <title>Document</title>
   </head>
   
-  <body class="min-h-screen flex flex-col bg-slate-50 dark:bg-black dark:text-white font-serif text-lg">
+  <body class="min-h-screen flex flex-col bg-slate-50 text-gray-700 font-serif">
     
     {% include 'partials/_header.html' %}
     
     <main>
-      {{ content | safe }}
+      {{ content | safe }} 
     </main>
     
     {% include 'partials/_footer.html' %}
