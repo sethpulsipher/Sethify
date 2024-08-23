@@ -26,6 +26,18 @@ This is the repository for my personal website, designed to showcase my portfoli
 - **SEO Optimized**: Built with best practices to rank well on search engines.
 - **Markdown Support**: Write blog posts and pages using simple markdown.
 
+## Colors Used
+
+### Primary Color
+<span style="display:inline-block;width:20px;height:20px;background-color:#3498db;"></span> `#3498db` (Blue)
+
+### Secondary Color
+<span style="display:inline-block;width:20px;height:20px;background-color:#e74c3c;"></span> `#e74c3c` (Red)
+
+### Accent Color
+<span style="display:inline-block;width:20px;height:20px;background-color:#2ecc71;"></span> `#2ecc71` (Green)
+
+
 ## Guide
 
 Basic Commands:
