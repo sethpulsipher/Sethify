@@ -9,7 +9,6 @@ collections:
   - name: "blog"
     label: "Blog"
     folder: "src/content/blog"
-    create: true
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
