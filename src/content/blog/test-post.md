@@ -1,9 +1,11 @@
 ---
-title: Test Post
+title: First Post
+url: First Post
 description: This is a test post for the blog
-url: first-post
 date: 2024-08-26
 featuredImage: /assets/images/blog/image1.jpg
+image: /assets/images/blog/image1.jpg
+imageAlt: sun
 ---
 
 ## Lacerans aliter tetigit praeterea rite
