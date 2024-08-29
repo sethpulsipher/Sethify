@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "tailwind:build": "npx tailwindcss -i ./input.css -o ./_site/css/styles.css",
-    "tailwind:watch": "npx tailwindcss -i ./input.css -o ./_site/css/styles.css --watch",
+    "tailwind:watch": "npx tailwindcss -i ./src/css/input.css -o ./_site/css/styles.css --watch",
     "eleventy:build": "npx eleventy",
     "eleventy:watch": "npx eleventy --watch",
     "eleventy:serve": "npx eleventy --serve",

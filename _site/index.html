@@ -7,112 +7,85 @@
     <meta name="description" content="Fullstack Web Developer Portfolio">
 
     <link rel="stylesheet" href="/css/styles.css">
-    <script defer src="/assets/js/app.js"></script>
-    <title>Document</title>
+    
+    <!-- GSAP - Animation Library to move each character-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- GSAP text plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <!-- split-type - Splits sentence up -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- Dark Mode -->
+    <script defer src="/assets/js/darkMode.js"></script>
+    <script defer src="/assets/js/popUp.js"></script>
+    <script defer src="/assets/js/typewriter.js"></script>
+
+    <title></title>
   </head>
   
-  <body class="min-h-screen flex flex-col bg-slate-50 text-gray-700 font-serif">
+  <body class="min-h-screen flex flex-col bg-slate-50 text-gray-700 dark:bg-slate-950 dark:text-gray-50">
     
-    <header class="w-full justify-between items-center sticky flex align-baseline bg-white text-neutral-900 top-0 py-4 px-6">
-    
-    <a href="#">
-      <img src="/assets/svg/Full-Logo-Color-Fill.svg" alt="logo" class="h-12">
-    </a>
+    <header>
+  <nav class="sticky top-0 border-gray-200">
+    <div class="flex flex-wrap items-center justify-between mx-auto p-10 sm:px-40">
 
-    <nav>
+      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Sethify</span>
+      </a>
 
-      <ul class="flex gap-10">
-        <li>
-          <a href="/blog">Blog</a>
-        </li>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
 
-        <li>
-          <a href="#">Github</a>
-        </li>
-
-        <li>
-          <img class="moon" src="/assets/svg/icon-moon.svg" alt="dark-mode-icon">
-          <img class="sun" src="/assets/svg/icon-sun.svg" alt="dark-mode-icon">
-        </li>
-      </ul>
-
-    </nav>
-
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-semibold flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-700">
+          <li>
+            <a href="/" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+          </li>
+          <li>
+            <a href="/blog" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog</a>
+          </li>
+          <li>
+            <img class="moon cursor-pointer" src="/assets/svg/icon-moon.svg" alt="dark-mode-icon">
+            <img class="sun cursor-pointer" src="/assets/svg/icon-sun.svg" alt="dark-mode-icon">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
     
     <main>
       
-<section class="bg-gradient-to-br from-cyan-400 to-purple-500 py-12 px-8">
-    <div class="mx-auto grid max-w-5xl grid-cols-1 items-center gap-12 py-6 md:grid-cols-2 md:py-12">
-      
-    <img src="/assets/images/blank.webp" alt="hero" class="max-h-[32rem]">
-  
-    <div>
-      <h1 class="text-4xl font-bold leading-[1.5] text-white md:text-5xl">👋 Hi, I'm Seth</h1>
-      <p class="pt-4 text-lg leading-[1.5] text-white">
-        I'm a seasoned Full Stack Software Developer with a solid background in IT and a keen interest in cybersecurity. My passion for technology drives me to create and deliver cutting-edge web solutions, constantly pushing boundaries to explore new possibilities. With expertise in both front-end and back-end development, I excel at transforming ideas into reality through clean code and intuitive design.
-      </p>
-    </div>
+      <section class="flex min-h-[50vh] items-end justify-start bg-slate-800">
 
+  <div class="p-8 sm:px-40">
+    <h1 class="text-4xl font-semibold text-blue-400 md:text-6xl">Hi, I'm Seth!👋</h1>
+
+    <div class="text-2xl text-white md:text-4xl py-3">
+      <span id="animated-text"></span>
+      <span id="cursor">_</span>
+    </div>
+    
+    <div class="py-2">
+      <a href="#" class="bg-blue-500 p-6 py-1 text-center rounded-lg overflow-hidden text-white">Hire Me</a>
+      <a href="#" class="bg-transparent border border-blue-500 p-6 py-1 text-center rounded-lg mx-2 overflow-hidden text-white">View Resume</a>
+    </div>
   </div>
+
 </section>
-<section class="px-8 pt-16">
-    <h2 class="text-center text-4xl font-bold">Many options to choose from</h2>
-    <p class="mx-auto mt-4 max-w-3xl text-center">
-       Velit perspiciatis error est quam expedita aperiam assumenda eveniet, iste voluptatibus suscipit eligendi odit
-       consequatur architecto dolor!
-    </p>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mt-12">
-       
- 
-       
-<div class="p-6 bg-white border border-gray-100 rounded-lg shadow-sm">
-   <div class="w-12 h-1.5 bg-cyan-300"></div>
-   <h3 class="font-semibold text-xl mt-2.5">Iste voluptatibus</h3>
-   <p class="mt-4 text-gray-600">
-      Perspiciatis error est quam expedita aperiam assumenda eveniet, iste voluptatibus suscipit. 
-   </p>
-</div>
-
- 
-       
-<div class="p-6 bg-white border border-gray-100 rounded-lg shadow-lg">
-   <div class="w-12 h-1.5 bg-pink-300"></div>
-   <h3 class="font-semibold text-xl mt-2.5">Architecto dolor</h3>
-   <p class="mt-4 text-gray-600">
-      Perspiciatis error est quam expedita aperiam assumenda eveniet, iste voluptatibus suscipit. 
-   </p>
-</div>
-
- 
-       
-<div class="p-6 bg-white border border-gray-100 rounded-lg shadow-sm">
-   <div class="w-12 h-1.5 bg-purple-300"></div>
-   <h3 class="font-semibold text-xl mt-2.5">Est quam expedita</h3>
-   <p class="mt-4 text-gray-600">
-      Perspiciatis error est quam expedita aperiam assumenda eveniet, iste voluptatibus suscipit. 
-   </p>
-</div>
-
-    </div>
- </section>
-<section class="p-5">
-    <h1 class="text-4xl underline font-bold">Stack();</h1>
-    <p class="text-xl mb-3">I build most of my projects with <span class="font-semibold">.NET | 11ty | Tailwind</span></p>
-  
-    <h2 class="text-2xl font-semibold">My stack includes:</h2>
-    <h3 class="font-bold mt-2">Languages</h3>
-    <p>C# | Javascript | SQL</p>
-    <h3 class="font-bold mt-2">Front-End</h3>
-    <p>HTML | TailwindCSS | 11ty | Blazor | Razor</p>
-    <h3 class="font-bold mt-2">Back-End</h3>
-    <p>.NET Core | Web API's </p>
-    <h3 class="font-bold mt-2">Databases</h3>
-    <p>MSSQL | MySQL  </p>
-</section>
-<section class="px-5 py-10">
-    <h1 class="text-4xl underline font-bold mb-4 ">Projects();</h1>
-    <div class="md:flex">
+<section class="p-8 sm:px-40">
+    <h1 class="text-3xl font-bold">My Projects</h1>
+    <div class="md:flex gap-3">
     
         <div class="flex-auto my-5 w-full md:w-1/3">
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -121,25 +94,30 @@
                 </a>
                 <div class="p-5">
                     <a href="#">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Project 1</h5>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Sethify</h5>
                     </a>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Sethify is this website. It's purpose is to serve as a portfolio for my development career.</p>
+                    <ul class="flex gap-2">
+                        <li>11ty</li>
+                        <li>Tailwind</li>
+                        <li>JS</li>
+                    </ul>
                     <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         Read more
                     <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                     </svg>
                 </a>
+                </div>
             </div>
         </div>
-    </div>
   
   
-    <div class="flex-auto my-5 w-full md:w-1/3">
-        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <a href="#">
+        <div class="flex-auto my-5 w-full md:w-1/3">
+         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+             <a href="#">
                 <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-            </a>
+             </a>
             <div class="p-5">
                 <a href="#">
                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Project 2</h5>
@@ -151,9 +129,9 @@
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                 </svg>
             </a>
+            </div>
+            </div>
         </div>
-    </div>
-    </div>
   
   
       <div class="flex-auto my-5 w-full md:w-1/3">
@@ -200,18 +178,8 @@
   
     </div>
 </section>
-<section class="p-5 ">
-    <h1 class="text-4xl underline font-bold">Tools();</h1>
-    <p><span class="text-xl font-semibold">Git | Github</span> : Version Control</p>
-    <p><span class="text-xl font-semibold">Netlify | Azure</span> : PaaS Hosting Providers</p>
-    <p><span class="text-xl font-semibold">VsCode</span> : IDE</p>
-    <p><span class="text-xl font-semibold">Postman</span> : REST client for testing</p>
-    <p><span class="text-xl font-semibold">NSwag</span> : Generates client side code for Entity Framework</p>
-    <p><span class="text-xl font-semibold">Windows</span> : Main OS</p>
-    <p><span class="text-xl font-semibold">Dev Tools</span> : For frontend testing</p>
-</section>
-<div class="p-5">
-    <h1 class="text-4xl underline font-bold">Contact();</h1>
+<div class="p-8 sm:px-40">
+    <h1 class="text-4xl">Contact</h1>
     <p>Looking to contact me or follow me socials? This is the right spot.</p>
     <div class="flex mt-4">
   
@@ -230,7 +198,7 @@
       
     </div>
 </div>
- 
+      
     </main>
     
     <footer class="text-center mt-auto">

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fullstack Web Developer Portfolio">
+
+    <link rel="stylesheet" href="/css/styles.css">
+    
+    <!-- GSAP - Animation Library to move each character-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- GSAP text plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <!-- split-type - Splits sentence up -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- Dark Mode -->
+    <script defer src="/assets/js/darkMode.js"></script>
+    <script defer src="/assets/js/popUp.js"></script>
+    <script defer src="/assets/js/typewriter.js"></script>
+
+    <title>{{ title }}</title>
+  </head>
+  
+  <body class="min-h-screen flex flex-col bg-slate-50 text-gray-700 dark:bg-slate-950 dark:text-gray-50">
+    
+    {% include 'components/header.html' %}
+    
+    <main>
+      {% block body %}
+      {{ content | safe }}
+      {% endblock %}
+    </main>
+    
+    {% include 'components/footer.html' %}
+
+  </body>
+</html>
