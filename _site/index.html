@@ -20,6 +20,8 @@
     <script defer src="/assets/js/popUp.js"></script>
     <script defer src="/assets/js/typewriter.js"></script>
 
+    
+
     <title></title>
   </head>
   
@@ -66,7 +68,24 @@
     
     <main>
       
-      <section class="flex min-h-[50vh] items-end justify-start bg-slate-800">
+      
+
+
+<script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script defer>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+
+
+<section class="flex min-h-[50vh] items-end justify-start bg-slate-800">
 
   <div class="p-8 sm:px-40">
     <h1 class="text-4xl font-semibold text-blue-400 md:text-6xl">Hi, I'm Seth!👋</h1>
