@@ -1,6 +1,29 @@
-{% extends "layouts/base.html" %}
-{% block body %}
-<h2>{{ title }}</h2>
-<img src="{{ featuredImage | url }}" alt="{{ featuredImage }}">
-<p>{{ content | safe }}</p>
-{% endblock %}
+---
+layout: layouts/base.html
+---
+<section class="p-8 sm:px-80">
+    
+    <!-- Content -->
+    <article>
+        <!-- Author Content-->
+        <section class="flex items-center space-x-4">
+
+            <img src="{{ authorImage | url }}" alt="Author Headshot" class="w-16 h-16 rounded-full object-cover">
+            <div>
+                <h2 class="text-lg font-semibold">{{ authorName}}</h2>
+                <p class="text-sm text-gray-500 dark:text-gray-400">{{ authorBio }}</p>
+            </div>
+
+        </section>
+        
+        <section class="py-4">
+            <h2 class="text-4xl pb-4">{{ title }}</h2>
+            <img src="{{ featuredImage | url }}" alt="{{ featuredImage }}" class="rounded-lg shadow-lg">
+            <p class="text-center italic text-gray-600 dark:text-gray-400 mb-5">{{ featuredImageCredit }}</p>
+            <article class="prose max-w-none dark:prose-invert">
+                {{ content | safe }}
+            </article>
+        </section>
+    </article>
+
+</section>

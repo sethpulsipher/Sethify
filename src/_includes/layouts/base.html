@@ -30,9 +30,7 @@
     {% include 'components/header.html' %}
     
     <main>
-      {% block body %}
       {{ content | safe }}
-      {% endblock %}
     </main>
     
     {% include 'components/footer.html' %}

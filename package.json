@@ -3,20 +3,24 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "tailwind:build": "npx tailwindcss -i ./input.css -o ./_site/css/styles.css",
-    "tailwind:watch": "npx tailwindcss -i ./src/css/input.css -o ./_site/css/styles.css --watch",
-    "eleventy:build": "npx eleventy",
-    "eleventy:watch": "npx eleventy --watch",
-    "eleventy:serve": "npx eleventy --serve",
-    "start": "concurrently \"npx tailwindcss -i ./src/css/input.css -o ./_site/css/styles.css --watch\" \"npx eleventy --serve\""
+    "build:tailwind": "npx tailwindcss -i ./input.css -o ./_site/css/styles.css",
+    "watch:tailwind": "npx tailwindcss -i ./src/css/input.css -o ./_site/css/styles.css --watch",
+    "build:eleventy": "npx eleventy",
+    "watch:eleventy": "npx eleventy --serve",
+    "start": "del-cli ./_site --force && npm-run-all --parallel watch:*"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@11ty/eleventy": "github:11ty/eleventy", 
-    "concurrently": "^8.2.2",
+    "@11ty/eleventy": "github:11ty/eleventy",
+    "@tailwindcss/typography": "^0.5.15",
+    "daisyui": "^4.12.10",
     "tailwindcss": "^3.4.10"
+  },
+  "dependencies": {
+    "del-cli": "^5.1.0",
+    "npm-run-all": "^4.1.5"
   }
 }

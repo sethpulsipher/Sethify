@@ -1,9 +1,13 @@
 ---
 title: Test Post
 description: This is a test post for the blog
-url: first-post
+url: test-post
 date: 2024-08-26
 featuredImage: /assets/images/blog/image1.jpg
+featuredImageCredit: Digital art by Anonymous
+authorImage: /assets/images/blog/headshot.webp
+authorName: Author Name
+authorBio: Author Bio
 ---
 
 ## Lacerans aliter tetigit praeterea rite

@@ -2,7 +2,7 @@
     "layout": "layouts/post.html",
     "eleventyComputed": {
         "preloadImg": "{{ image }}",
-        "permalink": "blog/{{ url | slug }}/"
+        "permalink": "/blog/{{ url | slug }}/"
     },
-    "tags": "post"
+    "tags": "posts"
 }
