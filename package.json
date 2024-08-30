@@ -7,7 +7,8 @@
     "watch:tailwind": "npx tailwindcss -i ./src/css/input.css -o ./_site/css/styles.css --watch",
     "build:eleventy": "npx eleventy",
     "watch:eleventy": "npx eleventy --serve",
-    "start": "del-cli ./_site --force && npm-run-all --parallel watch:*"
+    "start": "del-cli ./_site --force && npm-run-all --parallel watch:*",
+    "build": "run-s build:*"
   },
   "keywords": [],
   "author": "",
