@@ -1,6 +1,5 @@
 ---
-title: What up with it
-url: First Post
+title: Test
 description: This is a test post for the blog
 url: test-post
 date: 2024-08-26

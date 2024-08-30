@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:tailwind": "npx tailwindcss -i ./src/css/input.css -o ./_site/css/styles.css",
+    "build:tailwind": "npx tailwindcss build -i ./src/css/input.css -o ./_site/css/styles.css",
     "watch:tailwind": "npx tailwindcss -i ./src/css/input.css -o ./_site/css/styles.css --watch",
     "build:eleventy": "npx eleventy",
     "watch:eleventy": "npx eleventy --serve",
