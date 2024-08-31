@@ -40,12 +40,9 @@ This is the repository for my personal website, designed to showcase my portfoli
 
 ## Guide
 
-Basic Commands:
-
-`npm start`
-```bash
-"start": "concurrently \"npx tailwindcss -i ./input.css -o ./_site/css/styles.css --watch\" \"npx eleventy --serve\""
-```
+### Blog
+Post card image: 400x300 | 12rem (192px)
+Post featured image: 1200x600 | 20rem (320px)
 
 ## Installation
 
