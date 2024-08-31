@@ -1,13 +1,13 @@
 ---
-title: Test
-description: This is a test post for the blog
-url: test-post
+title: Test 2
+url: test-post-two
+description: Another test post for the blog
 date: 2024-08-26
-image: /assets/images/blog/image1.jpg
-imageAlt: Sun
+image: /assets/images/blank.webp
+imageAlt: Holder
 imageCredit: Digital art by Anonymous
-authorImage: /assets/images/blog/headshot.webp
 authorName: Author Name
+authorImage: /assets/images/blog/headshot.webp
 authorBio: Author Bio
 tags:
     - featured

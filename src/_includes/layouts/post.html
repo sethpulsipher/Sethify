@@ -1,29 +1,31 @@
 ---
 layout: layouts/base.html
 ---
-<section class="p-8 sm:px-80">
-    
-    <!-- Content -->
-    <article>
-        <!-- Author Content-->
-        <section class="flex items-center space-x-4">
+<section class="container mx-auto px-4">
 
-            <img src="{{ authorImage | url }}" alt="Author Headshot" class="w-16 h-16 rounded-full object-cover">
-            <div>
-                <h2 class="text-lg font-semibold">{{ authorName}}</h2>
-                <p class="text-sm text-gray-500 dark:text-gray-400">{{ authorBio }}</p>
-            </div>
+    <!-- Featured Image -->
+    <div class="w-full mb-8">
+        <img src="{{ image | url }}" alt="{{ imageAlt }}" class="w-full h-80 object-cover rounded-lg shadow-lg">
+    </div>
+  
+      <!-- Blog Post Title -->
+    <article class="max-w-2xl mx-auto">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">{{ title }}</h1>
+  
+        <!-- Post Meta -->
+        <div class="text-gray-500 mb-6">
+          <span>By <a href="#" class="text-blue-600 hover:underline">{{ authorName }}</a></span> • <span>{{ date | postDate }}</span>
+        </div>
+  
+        <!-- Blog Content -->
+        <div class="prose lg:prose-xl">    
+            {{ content | safe }}
+        </div>
 
-        </section>
-        
-        <section class="py-4">
-            <h2 class="text-4xl pb-4">{{ title }}</h2>
-            <img src="{{ featuredImage | url }}" alt="{{ featuredImage }}" class="rounded-lg shadow-lg">
-            <p class="text-center italic text-gray-600 dark:text-gray-400 mb-5">{{ featuredImageCredit }}</p>
-            <article class="prose max-w-none dark:prose-invert">
-                {{ content | safe }}
-            </article>
-        </section>
-    </article>
-
+        <!-- Call to Action -->
+        <div class="mt-8">
+            <a href="#" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Read More Posts</a>
+        </div>
+      </article>
+  
 </section>
