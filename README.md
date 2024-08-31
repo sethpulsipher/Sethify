@@ -41,8 +41,8 @@ This is the repository for my personal website, designed to showcase my portfoli
 ## Guide
 
 ### Blog
-- Post card image: 400x300 | 12rem (192px)
-- Post featured image: 1200x600 | 20rem (320px)
+- **Post card image**: 400x300 | 12rem (192px)
+- **Post featured image**: 1200x600 | 20rem (320px)
 
 ## Installation
 
