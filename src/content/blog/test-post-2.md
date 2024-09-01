@@ -3,7 +3,7 @@ title: Test 2
 url: test-post-two
 description: Another test post for the blog
 date: 2024-08-26
-image: /assets/images/blank.webp
+image: /assets/images/blog/blank.webp
 imageAlt: Holder
 imageCredit: Digital art by Anonymous
 authorName: Author Name
