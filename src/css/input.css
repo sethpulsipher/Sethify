@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.display-none {
-    @apply hidden;
+@layer components{
+    .display-none {
+        @apply hidden;
+    }
 }
