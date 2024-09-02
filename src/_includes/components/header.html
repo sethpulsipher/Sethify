@@ -1,24 +1,26 @@
-<header>
-  <nav class="border-gray-200">
-    <div class="flex flex-wrap items-center justify-between mx-auto py-4 px-8 sm:px-40 sm:p-8">
-
-      <!-- Logo -->
-      <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">Sethify</span>
-      </a>
-
+<header class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-3">
+  <nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
+    <!-- Logo -->
+    <a class="sm:order-1 flex-none text-xl font-semibold focus:outline-none focus:opacity-80" href="#">Sethify</a>
+    
+    <div class="sm:order-3 flex items-center gap-x-2">
       <!-- Mobile Menu Toggle -->
-      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-        </svg>
+      <button type="button" class="sm:hidden hs-collapse-toggle relative size-7 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" id="hs-navbar-alignment-collapse" aria-expanded="false" aria-controls="hs-navbar-alignment" aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-alignment">
+        <svg class="hs-collapse-open:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+        <svg class="hs-collapse-open:block hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        <span class="sr-only">Toggle</span>
       </button>
+      <!-- Dark Mode Button-->
+      <button type="button" class="py-2 px-3 items-center gap-x-2">
+        <img class="moon" src="/assets/svg/icon-moon.svg" alt="dark-mode-icon">
+        <img class="sun" src="/assets/svg/icon-sun.svg" alt="light-mode-icon">
+      </button>
+    </div>
 
-      <!-- Navigation Links -->
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="font-semibold flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:border-gray-700">
-          {% set navPages = collections.all | eleventyNavigation %}
+    <!-- Navigation Links -->
+    <div id="hs-navbar-alignment" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2" aria-labelledby="hs-navbar-alignment-collapse">
+      <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
+        {% set navPages = collections.all | eleventyNavigation %}
           {% for entry in navPages %}
             {% set hasChild = entry.children.length %}
             {% set hideClasses = [] %}
@@ -28,8 +30,8 @@
             {% if entry.hideOnDesktop %}
               {% set hideClasses = (hideClasses.push("block md:hidden"), hideClasses) %}
             {% endif %}
-
-            <li class="{{ hideClasses | join(' ') }}">
+  
+            <div class="{{ hideClasses | join(' ') }}">
               {% if hasChild %}
                 <!-- Dropdown Button -->
                 <button class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
@@ -39,37 +41,33 @@
                 >
                   {{ entry.key }}
                 </button>
-
+  
                 <!-- Dropdown Menu -->
-                <ul class="hidden" id="dropdown-{{ entry.key }}">
+                <div class="hidden" id="dropdown-{{ entry.key }}">
                   {% for child in entry.children %}
-                    <li>
+                    <div>
                       <a href="{{ child.url }}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">{{ child.key }}</a>
-                    </li>
+                    </div>
                   {% endfor %}
-                </ul>
+                </div>
               {% else %}
                 <!-- Normal Link -->
-                <a href="{{ entry.url }}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent 
+                <a href="{{ entry.url }}" class="block py-2 px-3 roundedmd:hover:bg-transparent md:border-0 md:p-0
                 {% if (entry.url in page.url and entry.url != '/') or (page.url == '/' and entry.url == '/')  %}
-                 text-blue-700
+                 text-blue-700 dark:text-blue-400
                 {% else %}
-                text-gray-700 dark:text-white
-                {% endif %}"" {% if entry.url == page.url %} aria-current="page" {% endif %}>
+                text-gray-900 dark:text-white
+                {% endif %}" {% if entry.url == page.url %} aria-current="page" {% endif %}>
                   {{ entry.key }}
                 </a>
               {% endif %}
-            </li>
+            </div>
           {% endfor %}
-
-          <!-- Dark Mode Toggle -->
-          <li>
-            <img class="moon cursor-pointer" src="/assets/svg/icon-moon.svg" alt="dark-mode-icon">
-            <img class="sun cursor-pointer" src="/assets/svg/icon-sun.svg" alt="dark-mode-icon">
-          </li>
-        </ul>
+        <!-- <a class="font-medium text-blue-500 focus:outline-none" href="#" aria-current="page">Landing</a>
+        <a class="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400" href="#">Account</a>
+        <a class="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400" href="#">Work</a>
+        <a class="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400" href="#">Blog</a> -->
       </div>
     </div>
   </nav>
 </header>
-
