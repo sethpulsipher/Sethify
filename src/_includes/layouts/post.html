@@ -3,11 +3,6 @@ layout: layouts/base.html
 ---
 <section class="container mx-auto px-4">
 
-    <!-- Featured Image -->
-    <div class="w-full mb-8">
-        <img src="{{ image | url }}" alt="{{ imageAlt }}" class="w-full h-80 object-cover rounded-lg shadow-lg">
-    </div>
-  
       <!-- Blog Post Title -->
     <article class="max-w-2xl mx-auto">
         <h1 class="text-4xl font-bold text-gray-800 mb-4">{{ title }}</h1>
@@ -17,6 +12,11 @@ layout: layouts/base.html
           <span>By <a href="#" class="text-blue-600 hover:underline">{{ authorName }}</a></span> • <span>{{ date | postDate }}</span>
         </div>
   
+        <!-- Featured Image -->
+        <div class="w-full mb-8">
+          <img src="{{ image | url }}" alt="{{ imageAlt }}" class="w-full h-80 object-cover rounded-lg shadow-lg">
+        </div>
+
         <!-- Blog Content -->
         <div class="prose lg:prose-xl">    
             {{ content | safe }}

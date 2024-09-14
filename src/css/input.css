@@ -2,8 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .display-none {
-        @apply hidden;
+/* Override Tailwind's base styles for headings */
+@layer base {
+    h1 {
+      font-size: revert;
+      font-weight: 900;
     }
+    h2 {
+      font-size: revert;
+    }
+    h3 {
+      font-size: revert;
+    }
+    h4 {
+      font-size: revert;
+    }
+    h5 {
+      font-size: revert;
+    }
+    h6 {
+      font-size: revert;
+    }
+  }
+
+.display-none {
+    @apply hidden;
+}
+
+
+.checkmark {
+  position: relative;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+}
+
+.checkmark::before {
+  content: url('../assets/svg/check.svg');
+  position: absolute;
+  left: -40px;
+  height: 30px;
+  padding-left: 0.5rem;
+}
+
+
+body {
+    @apply transition-colors duration-200;
 }

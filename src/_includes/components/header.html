@@ -1,7 +1,7 @@
-<header class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-3">
+<header class="sticky top-0 z-50 flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-3 bg-gray-100 dark:bg-slate-950 shadow-lg dark:shadow-slate-800">
   <nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
     <!-- Logo -->
-    <a class="sm:order-1 flex-none text-xl font-semibold focus:outline-none focus:opacity-80" href="#">Sethify</a>
+    <a class="sm:order-1 flex-none text-xl font-semibold focus:outline-none focus:opacity-80" href="/">Sethify</a>
     
     <div class="sm:order-3 flex items-center gap-x-2">
       <!-- Mobile Menu Toggle -->
@@ -11,7 +11,7 @@
         <span class="sr-only">Toggle</span>
       </button>
       <!-- Dark Mode Button-->
-      <button type="button" class="py-2 px-3 items-center gap-x-2">
+      <button type="button" class="py-2 px-3 items-center gap-x-2" id="dark-mode-toggle" aria-label="dark mode toggle">
         <img class="moon" src="/assets/svg/icon-moon.svg" alt="dark-mode-icon">
         <img class="sun" src="/assets/svg/icon-sun.svg" alt="light-mode-icon">
       </button>

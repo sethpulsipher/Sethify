@@ -30,18 +30,9 @@
     {% endif %}
 
     <link rel="stylesheet" href="/css/styles.css">
-    
-    <!-- GSAP - Animation Library to move each character-->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <!-- GSAP text plugin -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-    <!-- split-type - Splits sentence up -->
-    <script src="https://unpkg.com/split-type"></script>
 
     <!-- Dark Mode -->
     <script defer src="/assets/js/darkMode.js"></script>
-    <script defer src="/assets/js/popUp.js"></script>
-    <script defer src="/assets/js/typewriter.js"></script>
     <script defer src="/assets/js/nav.js"></script>
 
     {% block head %}{% endblock %}
@@ -49,7 +40,7 @@
     <title>{{ title }}</title>
   </head>
   
-  <body class="min-h-screen flex flex-col bg-slate-100 text-gray-700 dark:bg-slate-950 dark:text-gray-50">
+  <body class="min-h-screen flex flex-col bg-slate-100 text-gray-700 dark:bg-gray-950 dark:text-gray-50">
     
     {% include 'components/header.html' %}
     
