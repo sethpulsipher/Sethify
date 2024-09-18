@@ -4,7 +4,7 @@
       <div class="flex flex-col md:flex-row md:justify-between md:space-x-8">
         <!-- Company Info -->
         <div class="flex-1 mb-8 md:mb-0">
-          <h2 class="text-xl font-bold text-white mb-4">Company</h2>
+          <h2 class="text-xl font-bold text-white mb-4">Sethify</h2>
           <p class="text-gray-400">We are committed to providing quality services and products that meet your needs.</p>
         </div>
   
@@ -34,16 +34,26 @@
         <div class="flex-1">
           <h2 class="text-xl font-bold text-white mb-4">Contact Us</h2>
           <ul class="space-y-2">
-            <li><span class="text-gray-400">1234 Street Name, City, State, 12345</span></li>
-            <li><a href="tel:+1234567890" class="text-gray-400 hover:text-white">+1 (385) 205-9695</a></li>
-            <li><a href="mailto:info@example.com" class="text-gray-400 hover:text-white">info@example.com</a></li>
+            <li>
+              <a href="tel:+1234567890" class="text-gray-400 hover:text-white flex items-center">
+                <i class="fas fa-phone mr-2"></i> <!-- Phone icon -->
+                {{ personal.phoneFormatted }}
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@example.com" class="text-gray-400 hover:text-white flex items-center">
+                <i class="fas fa-envelope mr-2"></i> <!-- Envelope icon -->
+                {{ personal.email }}
+              </a>
+            </li>
           </ul>
+          
         </div>
       </div>
   
       <!-- Footer Bottom -->
       <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-500">
-        &copy; {% year %} Your Company. All rights reserved.
+        &copy; {% year %} <span>Sethify</span>. All rights reserved.
       </div>
     </div>
 </footer>
