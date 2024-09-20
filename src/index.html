@@ -28,7 +28,7 @@ eleventyNavigation:
 <!-------------------------->
 <!--       Landing        -->
 <!-------------------------->
-<section class="container min-h-screen mx-auto px-8 py-12 lg:py-24">
+<section class="container min-h-screen mx-auto px-8 py-10 lg:py-24">
   <div class="grid lg:grid-cols-2 gap-12 md:gap-0 items-center">
     <div class="space-y-6">
       <p class="text-xl md:text-2xl  text-gray-600">
@@ -60,10 +60,10 @@ eleventyNavigation:
 </section>
 
 
-<!-------------------------->
-<!--      What We Do      -->
-<!-------------------------->
-<section class="container mx-auto px-8 py-12">
+<!---------------------------->
+<!--       What We Do       -->
+<!---------------------------->
+<section class="container mx-auto px-8 py-10">
   <!-- First Half -->
   <div class="text-center lg:px-64">
 
@@ -71,7 +71,8 @@ eleventyNavigation:
     <h1>WHAT WE DO</h1>
 
     <!-- Seperator -->
-    <div class="h-0.5 w-44 bg-blue-400 mx-auto my-4"></div>
+    <div class="h-1 w-64 bg-gradient-to-r from-blue-300 via-blue-500 to-purple-600 rounded-full mx-auto my-6 animate-gradient-x"></div>
+
 
     <!-- Text -->
     <p class="text-lg text-balance">We specialize in small business web design and development for clients anywhere in the US. Every line of code is written by hand to ensure the best performance, which helps bring in more customers to your site and bring more revenue to your business.</p>
@@ -180,88 +181,94 @@ eleventyNavigation:
 </section>
 
 <!---------------------------->
-<!--     Why Choose Us      -->
+<!--        Offering        -->
 <!---------------------------->
-<section class="container mx-auto px-8 my-12">
+<section class="container mx-auto px-8 py-10">
 
-  <div class="lg:flex space-x-10">
-
-    <div class="lg:translate-y-24">
-      <img src="assets/svg/savings.svg" alt="piggy bank" class="mb-5" width="fill">
+  <div class="lg:flex space-y-10 lg:space-y-0 lg:space-x-10 items-center">
+    
+    <!-- Image -->
+    <div class="lg:w-1/2 lg:flex lg:justify-center lg:translate-y-24 lg:-translate-x-10">
+      <img src="assets/svg/savings.svg" alt="piggy bank" class="w-full max-w-sm mx-auto lg:max-w-none lg:w-auto" />
     </div>
     
-    
-    <div class="flex flex-col">
-      
+    <!-- Content -->
+    <div class="lg:w-1/2">
       
       <!-- Heading & Text -->
-      <div>
+      <div class="text-center lg:text-left">
         <!-- Heading -->
-        <h2 class="w-full text-xl font-bold pt-5"><span class="text-sky-400">$500</span> Down, <span class="text-sky-400">$200</span> Per Month, <br> 12 Month Minimum Contract</h2>
-        
-        <!-- Text -->
-        <p class="text-lg pt-5">$500 down for a standard 5 page small business website. If you need more than that then we have to do custom pricing based on the scope of work, number of additional pages, and time involved.</p>
-        
-        <p class="text-lg text-center font-semibold py-10">You own your domain, content, listing, and profiles. Cancel anytime with no fees or hassle.</p>
+        <h2 class="text-3xl font-bold lg:text-4xl leading-snug pt-5">
+          <span class="text-sky-400 hover:text-sky-500">$500</span> Down, <span class="text-sky-400 hover:text-sky-500">$200</span> Per Month,<br> 
+          12 Month Minimum Contract
+        </h2>
+
+        <!-- Description -->
+        <p class="text-lg pt-5">
+          $500 down for a standard 5 page small business website. For more extensive sites, pricing will be customized based on the scope of work, additional pages, and time involved.
+        </p>
+        <p class="text-lg text-center lg:text-left font-semibold py-6">
+          You own your domain, content, listings, and profiles. Cancel anytime with no fees or hassle.
+        </p>
       </div>
       
-      
-      
-      
-      
-      <!-- Bonuses -->
-      <div class="grid gap-10 justify-center my-5 md:grid-cols-2">
-        <div class="box-border shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2 p-5 rounded-lg">
+      <!-- Bonuses Grid -->
+      <div class="grid gap-10 justify-center lg:grid-cols-2 my-8">
+        <!-- Bonus 1 -->
+        <div class="box-border shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 p-5 rounded-lg dark:shadow-gray-900">
           <h3 class="checkmark text-lg font-bold">Hosting Fees Included</h3>
-          <p class="text-lg py-4 pl-10">Hosting fees are built right into the monthly payment.</p>
+          <p class="text-lg py-4">Hosting fees are built right into the monthly payment.</p>
         </div>
-      
-        <div class="box-border shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2 p-5 rounded-lg">
+        
+        <!-- Bonus 2 -->
+        <div class="box-border shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 p-5 rounded-lg dark:shadow-gray-900">
           <h3 class="checkmark text-lg font-bold">Unlimited Edits</h3>
-          <p class="text-lg py-4 pl-10">Change anything you want at anytime and it will be done that day.</p>
+          <p class="text-lg py-4">Make changes anytime and have them completed the same day.</p>
         </div>
-      
-        <div class="box-border shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2 p-5 rounded-lg">
+        
+        <!-- Bonus 3 -->
+        <div class="box-border shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 p-5 rounded-lg dark:shadow-gray-900">
           <h3 class="checkmark text-lg font-bold">24/7 Customer Service</h3>
-          <p class="text-lg py-4 pl-10">Call direct anytime day or night, no phone trees or automated responses.</p>
+          <p class="text-lg py-4">Direct access to support anytime, no automated responses.</p>
         </div>
-      
-        <div class="box-border shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2 p-5 rounded-lg">
+        
+        <!-- Bonus 4 -->
+        <div class="box-border shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 p-5 rounded-lg dark:shadow-gray-900">
           <h3 class="checkmark text-lg font-bold">Web Design & Development</h3>
-          <p class="text-lg py-4 pl-10">Includes over 40 hours of design, development, and testing.</p>
+          <p class="text-lg py-4">Includes over 40 hours of design, development, and testing.</p>
         </div>
-      
-        <div class="box-border shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2 p-5 rounded-lg">
+        
+        <!-- Bonus 5 -->
+        <div class="box-border shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 p-5 rounded-lg dark:shadow-gray-900">
           <h3 class="checkmark text-lg font-bold">100 Google Page Speed Score</h3>
-          <p class="text-lg py-4 pl-10">We can achieve a perfect 100 on Google Page Speed scores and boost your search ranking.</p>
+          <p class="text-lg py-4">Achieve a perfect 100 on Google Page Speed for better rankings.</p>
         </div>
-      
-        <div class="box-border shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-2 p-5 rounded-lg">
+        
+        <!-- Bonus 6 -->
+        <div class="box-border shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-2 p-5 rounded-lg dark:shadow-gray-900">
           <h3 class="checkmark text-lg font-bold">Google Analytics</h3>
-          <p class="text-lg py-4 pl-10">We install Analytics for free to monitor traffic and where it comes from.</p>
+          <p class="text-lg py-4">We set up Analytics for free to monitor site traffic.</p>
         </div>
       </div>
-      
-      
-      
-      
+
     </div>
     
   </div>
 </section>
 
+
 <!---------------------------->
 <!--       Portfolio        -->
 <!---------------------------->
-<section class="container mx-auto my-12">
+<section class="container mx-auto px-8 py-10">
   <!-- First Half -->
   <div class="text-center">
 
     <!-- Title -->
-    <h1>Our Portfolio</h1>
+    <h1>OUR PORTFOLIO</h1>
 
     <!-- Seperator -->
-    <div class="h-0.5 w-44 bg-blue-400 mx-auto my-4"></div>
+    <div class="h-1 w-64 bg-gradient-to-r from-blue-300 via-blue-500 to-purple-600 rounded-full mx-auto my-6 animate-gradient-x"></div>
 
   </div>
 
@@ -269,7 +276,7 @@ eleventyNavigation:
   <!-- Second Half -->
   <div class="grid justify-center gap-5 lg:grid-cols-3">
 
-    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg">
       <a href="#">
       <img class="rounded-t-lg" src="https://picsum.photos/500/250" alt="" />
       </a>
@@ -287,7 +294,7 @@ eleventyNavigation:
       </div>
     </div>
 
-    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg">
       <a href="#">
       <img class="rounded-t-lg" src="https://picsum.photos/500/250" alt="" />
       </a>
@@ -305,7 +312,7 @@ eleventyNavigation:
       </div>
     </div>
 
-    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg">
       <a href="#">
       <img class="rounded-t-lg" src="https://picsum.photos/500/250" alt="" />
       </a>
@@ -329,51 +336,56 @@ eleventyNavigation:
 <!---------------------------->
 <!--       Who We Are       -->
 <!---------------------------->
-<section>
+<section class="container mx-auto px-8 py-16">
   <!-- First Half -->
-  <div>
-
+  <div class="mb-12 text-center">
     <!-- Title -->
-    <h1></h1>
+    <h1>WHO WE ARE</h1>
 
     <!-- Seperator -->
-    <div>
+    <div class="h-1 w-32 bg-gradient-to-r from-blue-300 via-blue-500 to-purple-600 rounded-full mx-auto my-6"></div>
 
-    </div>
-
+    <p class="text-lg max-w-3xl mx-auto">
+      I'm Seth, a stay-at-home dog dad and software engineer. I started this business to support myself while spending time with my pup. With over 6+ years of entrepreneurship and development experience, I've had the privilege of building websites and web apps for companies, startups, and institutions. I've perfected my craft to the T.
+    </p>
   </div>
 
-
-  <!-- Second Half -->
-  <div>
-    
+  <!-- Card -->
+  <div class="bg-blue-200 shadow-lg rounded-lg p-8 text-center max-w-sm mx-auto">
+    <div class="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4">
+      <img src="assets/images/me_white.jpeg" alt="owner" class="object-cover w-full h-full transform scale-125">
+    </div>
+  
+    <h3 class="font-bold text-gray-900 text-xl">Seth P.</h3>
+    <h5 class="text-gray-500 text-md">Owner | Developer</h5>
   </div>
 </section>
+
 
 <!---------------------------->
 <!--         Blog           -->
 <!---------------------------->
-<section>
-  <!-- First Half -->
-  <div>
 
-    <!-- Title -->
-    <h1></h1>
-
-    <!-- Seperator -->
-    <div>
-
-    </div>
-
-  </div>
-
-
-  <!-- Second Half -->
-  <div>
-    
-  </div>
-</section>
 
 <!---------------------------->
 <!--        Pricing         -->
 <!---------------------------->
+<section class="container mx-auto px-8 py-10">
+  <div class="grid justify-center">
+    
+    <div class="text-center lg:px-64">
+
+      <!-- Title -->
+      <h1>GET IN TOUCH</h1>
+  
+      <!-- Seperator -->
+      <div class="h-1 w-64 bg-gradient-to-r from-blue-300 via-blue-500 to-purple-600 rounded-full mx-auto my-6 animate-gradient-x"></div>
+  
+    </div>
+
+    <div>
+      {% include 'components/contact-form.html' %}
+    </div>
+  </div>
+</section>
+                                      

@@ -5,7 +5,7 @@ layout: layouts/base.html
 
       <!-- Blog Post Title -->
     <article class="max-w-2xl mx-auto">
-        <h1 class="text-4xl font-bold text-gray-800 mb-4">{{ title }}</h1>
+        <h1 class="text-4xl font-bold text-gray-800 mb-4 dark:text-gray-200">{{ title }}</h1>
   
         <!-- Post Meta -->
         <div class="text-gray-500 mb-6">
@@ -18,13 +18,13 @@ layout: layouts/base.html
         </div>
 
         <!-- Blog Content -->
-        <div class="prose lg:prose-xl">    
+        <div class="prose lg:prose-xl text-gray-800 dark:text-gray-200">    
             {{ content | safe }}
         </div>
 
         <!-- Call to Action -->
         <div class="mt-8">
-            <a href="#" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Read More Posts</a>
+            <a href="/blog/" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Read More Posts</a>
         </div>
       </article>
   
