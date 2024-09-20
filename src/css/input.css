@@ -2,44 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Override Tailwind's base styles for headings */
+/* Override Tailwind's base styles */
 @layer base {
-    h1 {
-      font-size: revert;
-      font-weight: 900;
-    }
-    h2 {
-      font-size: revert;
-    }
-    h3 {
-      font-size: revert;
-    }
-    h4 {
-      font-size: revert;
-    }
-    h5 {
-      font-size: revert;
-    }
-    h6 {
-      font-size: revert;
-    }
+
+  body {
+    @apply transition-colors duration-200;
   }
 
-.checkmark {
-  position: relative;
-  margin-left: 2.5rem;
-  margin-top: 1rem;
+  h1 {
+    font-size: revert;
+    font-weight: 900;
+  }
+  h2 {
+    font-size: revert;
+  }
+  h3 {
+    font-size: revert;
+  }
+  h4 {
+    font-size: revert;
+  }
+  h5 {
+    font-size: revert;
+  }
+  h6 {
+    font-size: revert;
+  }
 }
 
-.checkmark::before {
-  content: url('../assets/svg/check.svg');
-  position: absolute;
-  left: -40px;
-  height: 30px;
-  padding-left: 0.5rem;
-}
+@layer components {
 
-
-body {
-    @apply transition-colors duration-200;
+  .checkmark {
+    position: relative;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+  }
+  
+  .checkmark::before {
+    content: url('../assets/svg/check.svg');
+    position: absolute;
+    left: -40px;
+    height: 30px;
+    padding-left: 0.5rem;
+  }
+  
 }
