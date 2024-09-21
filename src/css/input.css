@@ -5,53 +5,55 @@
 /* Override Tailwind's base styles */
 @layer base {
 
-  body {
-    @apply transition-colors duration-200;
-  }
+  
+}
 
-  h1 {
-    font-size: revert;
-    font-weight: 900;
-    @apply text-gray-900 dark:text-gray-100;
-  }
-  h2 {
-    font-size: revert;
-    font-weight: 800;
-    @apply text-gray-900 dark:text-gray-100;
-  }
-  h3 {
-    font-size: revert;
-    font-weight: 700;
-    @apply text-gray-900 dark:text-gray-100;
-  }
-  h4 {
-    font-size: revert;
-  }
-  h5 {
-    font-size: revert;
-  }
-  h6 {
-    font-size: revert;
-  }
-  p {
-    @apply text-gray-700 dark:text-gray-300;
-  }
+body {
+  @apply transition-colors duration-200;
+}
+
+h1 {
+  font-size: revert;
+  font-weight: 900;
+  @apply text-gray-900 dark:text-gray-100;
+}
+h2 {
+  font-size: revert;
+  font-weight: 800;
+  @apply text-gray-900 dark:text-gray-100;
+}
+h3 {
+  font-size: revert;
+  font-weight: 700;
+  @apply text-gray-900 dark:text-gray-100;
+}
+h4 {
+  font-size: revert;
+}
+h5 {
+  font-size: revert;
+}
+h6 {
+  font-size: revert;
+}
+p {
+  @apply text-gray-700 dark:text-gray-300;
 }
 
 @layer components {
+  
+}
 
-  .checkmark {
-    position: relative;
-    margin-left: 2.5rem;
-    margin-top: 1rem;
-  }
-  
-  .checkmark::before {
-    content: url('../assets/svg/check.svg');
-    position: absolute;
-    left: -40px;
-    height: 30px;
-    padding-left: 0.5rem;
-  }
-  
+.checkmark {
+  position: relative;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+}
+
+.checkmark::before {
+  content: url('../assets/svg/check.svg');
+  position: absolute;
+  left: -40px;
+  height: 30px;
+  padding-left: 0.5rem;
 }
