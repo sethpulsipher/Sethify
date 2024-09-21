@@ -2,10 +2,10 @@
 module.exports = {
   content: [
     "./src/**/*.{html,njk,js}", 
-    "./src/content/blog/*.md"
+    "./src/content/blog/*.md",
   ],
   safelist: [
-    'checkmark', // Add any other classes that might be purged
+    'checkmark',
   ],
   darkMode: 'class',
   theme: {
