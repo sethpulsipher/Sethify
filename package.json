@@ -4,7 +4,6 @@
   "main": "index.js",
   "scripts": {
     "watch:tailwind": "tailwindcss -i ./src/css/input.css -o ./_site/css/styles.css --watch",
-    "build:tailwind": "tailwindcss -o ./_site/css/styles.css --minify",
     "watch:eleventy": "cross-env ELEVENTY_ENV=DEV eleventy --serve",
     "build:eleventy": "cross-env ELEVENTY_ENV=PROD eleventy",
     "watch:cms": "npx decap-server",

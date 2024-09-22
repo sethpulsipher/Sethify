@@ -4,9 +4,6 @@ module.exports = {
     "./src/**/*.{html,njk,js}", 
     "./src/content/blog/*.md",
   ],
-  safelist: [
-    'checkmark',
-  ],
   darkMode: 'class',
   theme: {
     extend: {}
