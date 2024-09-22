@@ -2,34 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply transition-colors duration-200;
-}
+/* Override Tailwind's base styles */
+@layer base {
 
-h1 {
-  font-size: revert;
-  font-weight: 900;
-  @apply text-gray-900 dark:text-gray-100;
-}
-h2 {
-  font-size: revert;
-  font-weight: 800;
-  @apply text-gray-900 dark:text-gray-100;
-}
-h3 {
-  font-size: revert;
-  font-weight: 700;
-  @apply text-gray-900 dark:text-gray-100;
-}
-h4 {
-  font-size: revert;
-}
-h5 {
-  font-size: revert;
-}
-h6 {
-  font-size: revert;
-}
-p {
-  @apply text-gray-700 dark:text-gray-300;
+
+  h1 {
+    font-size: revert !important;
+    font-weight: 900 !important;
+
+  }
+  h2 {
+    font-size: revert !important;
+    font-weight: 800 !important;
+  }
+  h3 {
+    font-size: revert !important;
+    font-weight: 700 !important;
+  }
+  h4,
+  h5,
+  h6 {
+    font-size: revert !important;
+  }
+  p {
+    @apply text-gray-700 dark:text-gray-300;
+  }
 }
