@@ -6,7 +6,11 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {}
+    extend: {
+      content: {
+        checkmark: "url(../assets/svg/check.svg)",
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
