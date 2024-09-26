@@ -9,6 +9,8 @@ module.exports = {
     extend: {
       content: {
         checkmark: "url(../assets/svg/check.svg)",
+        swoopLight: "url(../assets/svg/swoop-light.svg)",
+        swoopDark: "url(../assets/svg/swoop-dark.svg)"
       },
     },
   },

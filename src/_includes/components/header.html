@@ -1,22 +1,22 @@
 <header class="sticky top-0 z-50 flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-sm py-3 shadow-lg dark:shadow-slate-800 backdrop-blur">
-  <nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
+  <nav class="w-full min-h-[56px] mx-auto px-8 flex flex-wrap basis-full items-center justify-between">
     <!-- Logo -->
     <a class="sm:order-1 flex-none text-xl font-semibold focus:outline-none focus:opacity-80 flex" href="/">
-      <img src="/assets/svg/logo-icon.svg" class="h-8" alt="sethify logo" />
+      <img src="/assets/svg/logo-icon.svg" class="h-10 sm:h-8" alt="sethify logo" />
       <span class="max-sm:hidden self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ethify</span>
     </a>
     
-    <div class="sm:order-3 flex items-center gap-x-2">
-
+    <!-- Buttons -->
+    <div class="sm:order-3 flex items-center gap-x-5">
       <!-- Dark Mode Button-->
-      <button id="dark-mode-toggle" aria-label="dark mode toggle" tabindex="3">
-        <img class="moon" aria-hidden="true" src="/assets/svg/icon-moon.svg" decoding="async" alt="moon">
-        <img class="sun" aria-hidden="true" src="/assets/svg/icon-sun.svg" decoding="async" alt="sun">
+      <button id="dark-mode-toggle" class="size-8" aria-label="dark mode toggle" tabindex="3">
+        <img class="moon size-8 sm:size-6" aria-hidden="true" src="/assets/svg/icon-moon.svg" decoding="async" alt="moon">
+        <img class="sun size-8 sm:size-6" aria-hidden="true" src="/assets/svg/icon-sun.svg" decoding="async" alt="sun">
       </button>
 
       <!-- Mobile Menu Toggle -->
-      <button type="button" class="sm:hidden hs-collapse-toggle relative size-7 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none" id="hs-navbar-alignment-collapse" aria-expanded="false" aria-controls="hs-navbar-alignment" aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-alignment">
-        <svg class="hs-collapse-open:hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+      <button type="button" class="sm:hidden hs-collapse-toggle relative size-10 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 dark:border-black bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 disabled:opacity-50 disabled:pointer-events-none" id="hs-navbar-alignment-collapse" aria-expanded="false" aria-controls="hs-navbar-alignment" aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-alignment">
+        <svg class="hs-collapse-open:hidden shrink-0 size-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
         <svg class="hs-collapse-open:block hidden shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
         <span class="sr-only">Toggle</span>
       </button>
@@ -24,7 +24,7 @@
 
     <!-- Navigation Links -->
     <div id="hs-navbar-alignment" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2" aria-labelledby="hs-navbar-alignment-collapse">
-      <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
+      <div class="flex flex-col gap-5 mt-5 sm:flex-row items-center sm:mt-0">
         {% set navPages = collections.all | eleventyNavigation %}
           {% for entry in navPages %}
             {% set hasChild = entry.children.length %}
@@ -68,10 +68,6 @@
               {% endif %}
             </div>
           {% endfor %}
-        <!-- <a class="font-medium text-blue-500 focus:outline-none" href="#" aria-current="page">Landing</a>
-        <a class="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400" href="#">Account</a>
-        <a class="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400" href="#">Work</a>
-        <a class="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400" href="#">Blog</a> -->
       </div>
     </div>
   </nav>

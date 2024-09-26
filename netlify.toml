@@ -1,6 +1,10 @@
 [build]
   publish = "_site/"
   command = "npm run build"
+  functions = "/functions"
+
+[dev]
+  command = "npm start"
 
 [[plugins]]
   # Installs the Lighthouse Build Plugin for all deploy contexts
