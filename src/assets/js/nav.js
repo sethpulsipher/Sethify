@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+function onToggleMenu(e) {
+  e.name = e.name === 'menu' ? 'close' : 'menu'
+}
 // This script shrinks the header after scrolling 100px
 /*
 document.addEventListener('scroll', () => {
