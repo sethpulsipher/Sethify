@@ -8,5 +8,5 @@ module.exports = {
         "instagram": "https://www.instagram.com/",
     },
     //! Include the file protocol (https://) and that NO TRAILING SLASH is included (.app/)
-    "domain": "https://www.sethify.netlify.app"
+    "domain": "https://www.sethify.com"
 };
