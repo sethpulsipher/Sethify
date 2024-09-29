@@ -1,5 +1,5 @@
 module.exports = {
-    "name": "Seth Pulsipher",
+    "name": "Sethify Web Development",
     "email": "sethify@gmail.com",
     "phoneForTel": "385-208-9695",
     "phoneFormatted": "(385) 205-9695",
