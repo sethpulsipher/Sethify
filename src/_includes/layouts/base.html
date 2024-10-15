@@ -28,20 +28,30 @@
     {% if preloadImg != '' %}
         <link rel="preload" as="image" href="{{ preloadImg }}"/>
     {% endif %}
-
-    <link rel="stylesheet" href="/css/styles.css">
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Dark Mode -->
     <script defer src="/assets/js/darkMode.js"></script>
     <script defer src="/assets/js/nav.js"></script>
+    <script defer src="/assets/js/popUp.js"></script>
+    <script defer src="/assets/js/typewriter.js"></script>
+
+    <!-- GSAP - Animation Library to move each character-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- GSAP text plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+    <!-- split-type - Splits sentence up -->
+    <script src="https://unpkg.com/split-type"></script>
 
     {% block head %}{% endblock %}
 
     <title>{{ title }}</title>
   </head>
   
-  <body class="min-h-screen overflow-x-hidden flex flex-col transition-colors duration-200 text-gray-900 dark:text-gray-100 bg-gray-50 dark:bg-gray-950">
+  <body class="min-h-screen overflow-x-hidden flex flex-col transition-colors duration-200 text-black dark:text-white bg-white dark:bg-gray-950 font-sans">
     
     {% include 'components/header.html' %}
     
