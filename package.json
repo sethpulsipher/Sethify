@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "watch:tailwind": "tailwindcss -i ./src/assets/css/input.css -o ./_site/assets/css/tailwind.css --watch",
-    "build:tailwind": "tailwindcss -i ./src/assets/css/input.css -o ./_site/assets/css/tailwind.css --minify",
+    "watch:tailwind": "tailwindcss -i ./src/input.css -o ./_site/assets/css/tailwind.css --watch",
+    "build:tailwind": "tailwindcss -i ./src/input.css -o ./_site/assets/css/tailwind.css --minify",
     "watch:eleventy": "cross-env ELEVENTY_ENV=DEV eleventy --serve",
     "build:eleventy": "cross-env ELEVENTY_ENV=PROD eleventy",
     "watch:cms": "npx decap-server",
