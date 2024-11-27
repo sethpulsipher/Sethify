@@ -1,6 +1,7 @@
 :root {
     --primary: #8080D7;
-    --blue: #1e293b;
+    --secondary: #9cfefd;
+    --backgrund: #010922;
 }
 
 .cta-curve {
@@ -20,7 +21,7 @@
 }
 
 .cta-curve .shape-fill {
-    fill: var(--blue);
+    fill: var(--backgrund);
 }
 
 
