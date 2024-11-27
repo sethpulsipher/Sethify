@@ -8,7 +8,10 @@ module.exports = {
   theme: {
     extend: {
       content: {
-        checkmark: "url(../assets/svg/check.svg)",
+        checkmark: "url(../svg/check.svg)",
+      },
+      color: {
+        'slate-blue': "#010922",
       },
     },
   },
