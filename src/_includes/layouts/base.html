@@ -33,11 +33,10 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!-- Dark Mode -->
+    <!-- Scripts -->
     <script defer src="/assets/js/darkMode.js"></script>
     <script defer src="/assets/js/nav.js"></script>
-    <script defer src="/assets/js/popUp.js"></script>
-    <script defer src="/assets/js/typewriter.js"></script>
+    <script defer src="/assets/js/lenis.js"></script>
 
     {% block head %}{% endblock %}
 
@@ -48,21 +47,12 @@
     
     {% include 'components/header.html' %}
     
-    <main>
+    <main class="min-h-screen">
       {{ content | safe }}
     </main>
     
     {% include 'components/footer.html' %}
     
-    <!-- IonIcons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <!-- GSAP - Animation Library to move each character-->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <!-- GSAP text plugin -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-    <!-- split type - Splits sentence up -->
-    <script src="https://unpkg.com/split-type"></script>
     <!-- lenis -->
     <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
     <script src="/assets/js/lenis.js"></script>
