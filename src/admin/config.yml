@@ -20,15 +20,17 @@ collections:
               label: "URL Slug",
               name: "url",
               widget: "string",
-              hint: 'Specify where the page will be written to. If you use "Blog Post", the post will be accessible from "blog/blog-post"',
+              hint: 'Specify where the page will be written to. If you use "Blog Post", the post will be accessible from "blog/blog-post".',
         }
-      - { label: "Description", name: "description", widget: "string" }
+      - { 
+              label: "Description", 
+              name: "description", 
+              widget: "string",
+              hint: 'Write a brief description about this article. It will be show on the article card at "website.com/blog".' 
+        }
       - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image Caption", name: "imageAlt", widget: "string" }
       - { label: "Image Credit", name: "imageCredit", widget: "string", required: false }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-      - { label: "Author", name: "authorName", widget: "string" }
-      - { label: "Author Image", name: "authorImage", widget: "image" }
-      - { label: "Author Bio", name: "authorBio", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
