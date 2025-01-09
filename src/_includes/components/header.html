@@ -1,4 +1,4 @@
-<header class="sticky top-0 flex flex-wrap z-50 sm:justify-start sm:flex-nowrap w-full py-3 shadow-lg dark:shadow-slate-800 backdrop-blur">
+<header class="sticky top-0 flex flex-wrap z-50 sm:justify-start sm:flex-nowrap w-full py-3 shadow-lg dark:shadow-slate-800 bg-gray-50 dark:bg-gray-950">
   <nav class="flex flex-wrap items-center justify-between w-[92%] mx-auto">
     <!-- Logo -->
     <a class="sm:order-1 flex-none text-xl font-semibold focus:outline-none focus:opacity-80 flex" href="/">
@@ -9,17 +9,20 @@
     <!-- Buttons -->
     <div class="sm:order-3 flex items-center gap-x-5">
       <!-- CTA Button -->
-      <a href="contact/" class="bg-gradient-to-r from-indigo-500 to-cyan-500 text-white font-semibold px-5 py-2 rounded-full hover:shadow-lg transition duration-300 max-sm:hidden">
-        Get In Touch
+      <a href="contact/" class="bg-violet-500 text-white font-semibold px-5 py-2 rounded-3xl hover:shadow-lg transition duration-300 max-sm:hidden">
+        Contact
       </a>
-      <!-- Dark Mode -->
+
+      <!--
       <button id="dark-mode-toggle" class="size-7" aria-label="dark mode toggle" tabindex="3">
         <img class="moon" aria-hidden="true" src="/assets/svg/icon-moon.svg" decoding="async" alt="moon">
         <img class="sun" aria-hidden="true" src="/assets/svg/icon-sun.svg" decoding="async" alt="sun">
       </button>
+      -->
+      
       <!-- Mobile Menu Toggle -->
       <button type="button" class="sm:hidden hs-collapse-toggle relative size-10 flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 dark:border-black bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:bg-gray-50 dark:focus:bg-gray-700 disabled:opacity-50 disabled:pointer-events-none" id="hs-navbar-alignment-collapse" aria-expanded="false" aria-controls="hs-navbar-alignment" aria-label="Toggle navigation" data-hs-collapse="#hs-navbar-alignment">
-        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-2xl cursor-pointer"></ion-icon>
+        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-lg cursor-pointer"><span class=" fa fa-bars"></span></ion-icon>
         <span class="sr-only">Toggle</span>
       </button>
     </div>
