@@ -5,11 +5,12 @@ module.exports = {
     "./src/content/blog/*.md",
     "./_site/**/.html",
   ],
-  darkMode: 'class',
+  //darkMode: 'class',
   theme: {
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
+      baloo: ['"Baloo 2"', 'cursive'],
     },
     extend: {
       content: {
