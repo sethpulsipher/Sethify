@@ -1,7 +1,0 @@
-_site
-node_modules
-.vscode
-.cache
-.env
-# Local Netlify folder
-.netlify

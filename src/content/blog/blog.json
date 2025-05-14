@@ -1,8 +1,0 @@
-{
-    "layout": "layouts/post.html",
-    "eleventyComputed": {
-        "preloadImg": "{{ image }}",
-        "permalink": "/blog/{{ url | slug }}/index.html"
-    },
-    "tags": "posts"
-}
