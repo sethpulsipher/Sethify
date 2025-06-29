@@ -3,29 +3,30 @@ layout: layouts/base.html
 ---
 <section class="container mx-auto px-4">
 
-      <!-- Blog Post Title -->
-    <article class="max-w-2xl mx-auto">
-        <h1 class="text-4xl font-bold mb-4">{{ title }}</h1>
-  
-        <!-- Post Meta -->
-        <div class="text-gray-500 mb-6">
-          <span>Date Posted: <span>{{ date | postDate }}</span>
-        </div>
-  
-        <!-- Featured Image -->
-        <div class="w-full mb-8">
-          <img src="{{ image | url }}" alt="{{ imageAlt }}" class="w-full h-80 object-cover rounded-lg shadow-lg">
-        </div>
+  <!-- Blog Post Title -->
+  <article class="max-w-2xl mx-auto">
+    <h1 class="text-4xl font-bold mb-4">{{ title }}</h1>
 
-        <!-- Blog Content -->
-        <div class="prose lg:prose-xl dark:prose-invert">    
-            {{ content | safe }}
-        </div>
+    <!-- Post Meta -->
+    <div class="text-gray-500 mb-6">
+      <span>Date Posted: <span>{{ date | postDate }}</span>
+    </div>
 
-        <!-- Call to Action -->
-        <div class="mt-8">
-            <a href="/blog/" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Read More Posts</a>
-        </div>
-      </article>
-  
+    <!-- Featured Image -->
+    <div class="w-full mb-8">
+      <img src="{{ image | url }}" alt="{{ imageAlt }}" class="w-full h-80 object-cover rounded-lg shadow-lg">
+    </div>
+
+    <!-- Blog Content -->
+    <div class="prose lg:prose-xl dark:prose-invert">
+      {{ content | safe }}
+    </div>
+
+    <!-- Call to Action -->
+    <div class="mt-8">
+      <a href="/blog/" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Read More
+        Posts</a>
+    </div>
+  </article>
+
 </section>
