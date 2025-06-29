@@ -1,0 +1,24 @@
+@import url('./styles.css');
+
+input,
+textarea {
+    color: #5A5A5A;
+}
+
+label {
+    font-size: var(--text-lg);
+    font-weight: 600;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+
+
+
+form {}
