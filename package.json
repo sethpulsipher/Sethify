@@ -5,7 +5,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "watch:css": "postcss ./src/_includes/styles/input.css -o ./src/assets/css/styles.css --watch",
-    "build:css": "npx @tailwindcss/cli -i ./src/assets/css/input.css -o ./public/assets/css/styles.css --minify",
+    "build:css": "postcss ./src/_includes/styles/input.css -o ./src/assets/css/styles.css --env production",
     "watch:eleventy": "cross-env ELEVENTY_ENV=DEV eleventy --serve",
     "build:eleventy": "cross-env ELEVENTY_ENV=PROD eleventy",
     "watch:cms": "npx decap-server",
