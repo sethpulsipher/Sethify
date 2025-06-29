@@ -1,7 +1,6 @@
 [build]
   publish = "public/"
-  command = "npm build"
-  functions = "/functions"
+  command = "pnpm build"
 
 [dev]
   command = "pnpm start"
