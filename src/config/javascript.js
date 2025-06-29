@@ -8,7 +8,7 @@ module.exports = {
     outputFileExtension: "js",
     init: async function () {
         // Create the /assets/js directory on first build (prevents an error from directory not existing)
-        fs.mkdir('_site/assets/js', { recursive: true }, (err) => {
+        fs.mkdir('public/assets/js', { recursive: true }, (err) => {
             if (err) throw err;
         });
     },
@@ -21,7 +21,7 @@ module.exports = {
         // Build JS with ESBuild. If production, minify, use sourcemaps, and target ES6
         const result = await esbuild.build({
             entryPoints: [inputPath],
-            outdir: "_site/assets/js",
+            outdir: "public/assets/js",
             write: false,
             bundle: true,
             minify: isProduction,

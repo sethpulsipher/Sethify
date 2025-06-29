@@ -1,4 +1,4 @@
-_site
+public
 node_modules
 .vscode
 .cache
