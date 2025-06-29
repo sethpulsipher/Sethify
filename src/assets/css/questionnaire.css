@@ -1,5 +1,3 @@
-@import url('./styles.css');
-
 input,
 textarea {
     color: #5A5A5A;
@@ -17,8 +15,3 @@ label {
     gap: 0.5rem;
     width: 100%;
 }
-
-
-
-
-form {}
