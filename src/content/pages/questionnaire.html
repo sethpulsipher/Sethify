@@ -10,17 +10,33 @@ permalink: "questionnaire/"
 
 <section class="mt-[90px] text-black dark:text-white">
     <div class="section-container">
-        <h1 class="mx-auto text-center mb-12 md:mb-16">Questionnaire</h1>
+        <h1 class="text-center">Website Questionnaire</h1>
+        <p class="mx-auto text-center mb-12 md:mb-16">The more information you put down the better!</p>
 
-        <form class="gap-4" data-netlify="true" name="questionnaire-form" method="POST">
+        <form class="gap-4" action="/thank-you" data-netlify="true" name="questionnaire-form" method="POST">
 
             <div class="flex flex-col justify-between mb-4 lg:flex-row lg:gap-4">
                 <div class="form-group">
-                    <label for="name">Name</label>
+                    <label for="name">Full Name</label>
                     <input type="text" id="name" name="name" placeholder="John Doe"
                         class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
                         required>
                 </div>
+
+                <div class="form-group">
+                    <label for="name">Company Name</label>
+                    <input type="text" id="name" name="name" placeholder="Doe Construction"
+                        class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Company Phone</label>
+                    <input type="text" id="phone" name="phone" placeholder="(123) 456-7890"
+                        class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
+                        required>
+                </div>
+            </div>
 
                 <div class="form-group">
                     <label for="email">Email</label>
@@ -28,14 +44,6 @@ permalink: "questionnaire/"
                         class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
                         required>
                 </div>
-
-                <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input type="text" id="phone" name="phone" placeholder="(123) 456-7890"
-                        class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
-                        required>
-                </div>
-            </div>
 
             <!-- Social Media Links -->
             <div class="form-group">
@@ -109,6 +117,14 @@ permalink: "questionnaire/"
                     cols="30" rows="10"></textarea>
             </div>
 
+
+            <div class="form-group">
+                <label for="other">Anything important missed on this questionnaire? (optional)</label>
+                <textarea name="other" id="other"
+                    placeholder="We love doughnuts and coffee when we work! We also do charity work! We have received X amount of awards!"
+                    class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
+                    cols="30" rows="10"></textarea>
+            </div>
 
             <button class="button px-18" type="submit">Submit</button>
         </form>
