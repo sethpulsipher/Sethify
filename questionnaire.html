@@ -10,110 +10,126 @@
 </head>
 
 <body>
-    <section class="text-black dark:text-white">
-        <div class="section-container">
-            <h1 class="mx-auto text-center mb-12 md:mb-16">Website Questionnaire</h1>
+    <section class="mt-[90px] text-black dark:text-white">
+    <div class="section-container">
+        <h1 class="text-center">Website Questionnaire</h1>
+        <p class="mx-auto text-center mb-12 md:mb-16">The more information you put down the better!</p>
 
-            <form class="gap-4" data-netlify="true" name="questionnaire-form" method="POST">
+        <form class="gap-4" action="/thank-you" data-netlify="true" name="questionnaire-form" method="POST">
 
-                <div class="flex flex-col justify-between mb-4 lg:flex-row lg:gap-4">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="John Doe"
-                            class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
-                            required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="example@gmail.com"
-                            class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
-                            required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="text" id="phone" name="phone" placeholder="(123) 456-7890"
-                            class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
-                            required>
-                    </div>
-                </div>
-
-                <!-- Social Media Links -->
+            <div class="flex flex-col justify-between mb-4 lg:flex-row lg:gap-4">
                 <div class="form-group">
-                    <label for="social-media-links">Social Media Links</label>
-                    <textarea name="social media links" id="social-media-links"
-                        placeholder="Include all links to your social media accounts..."
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe"
                         class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
-                        cols="30" rows="10"></textarea>
+                        required>
                 </div>
 
-                <!-- Main Services  -->
                 <div class="form-group">
-                    <label for="services">What are your 3-4 main services you provide? If you only have 1 service,
-                        what are the 3-4 main clients you service?</label>
-                    <textarea name="services" id="services"
-                        placeholder="Interior/Exterior Painting, Home Remodeling, Roofing, etc..."
+                    <label for="name">Company Name</label>
+                    <input type="text" id="name" name="name" placeholder="Doe Construction"
                         class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
-                        cols="30" rows="10"></textarea>
+                        required>
                 </div>
 
-                <!-- 2 Biggest Money Maker -->
                 <div class="form-group">
-                    <label for="money-makers">What are your 2 biggest money makers?</label>
-                    <textarea name="money-makers" id="money-makers" placeholder="Roofing, Home Remodeling..."
+                    <label for="phone">Company Phone</label>
+                    <input type="text" id="phone" name="phone" placeholder="(123) 456-7890"
                         class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
-                        cols="30" rows="10"></textarea>
+                        required>
                 </div>
+            </div>
 
-                <!-- All Services  -->
                 <div class="form-group">
-                    <label for="all-services">And what are all the other services you provide, no matter how
-                        small.</label>
-                    <textarea name="all-services" id="all-services"
-                        placeholder="Gutter Cleaning, Power Washing, Lawn Mowing, Fabrication, etc..."
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com"
                         class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
-                        cols="30" rows="10"></textarea>
+                        required>
                 </div>
 
-                <!-- Top 3 Qualities -->
-                <div class="form-group">
-                    <label for="three-traits">What are 3 qualities that make you better than the competition?</label>
-                    <textarea name="three-traits" id="three-traits" placeholder="Quality, Speed, Customer Service"
-                        class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
-                        cols="30" rows="10"></textarea>
-                </div>
-                <!-- About -->
-                <div class="form-group">
-                    <label for="about">About you, your company, expertise, philosophy about how you do
-                        business, mission statement, and experience.</label>
-                    <textarea name="about" id="about"
-                        placeholder="We are an awesome group of people who do this and that and we think this way about it and that way about this..."
-                        class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
-                        cols="30" rows="10"></textarea>
-                </div>
+            <!-- Social Media Links -->
+            <div class="form-group">
+                <label for="social-media-links">Social Media Links</label>
+                <textarea name="social media links" id="social-media-links"
+                    placeholder="Include all links to your social media accounts..."
+                    class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
+                    cols="30" rows="10"></textarea>
+            </div>
 
-                <!-- Target Demographic -->
-                <div class="form-group">
-                    <label for="target-demographic">Target Demographic</label>
-                    <textarea name="target-demographic" id="target-demographic"
-                        placeholder="Everyone aged 30 and up with a disposable income and a home..."
-                        class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
-                        cols="30" rows="10"></textarea>
-                </div>
+            <!-- Main Services  -->
+            <div class="form-group">
+                <label for="services">What are your 3-4 main services you provide? If you only have 1 service,
+                    what are the 3-4 main clients you service?</label>
+                <textarea name="services" id="services"
+                    placeholder="Interior/Exterior Painting, Home Remodeling, Roofing, etc..."
+                    class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
+                    cols="30" rows="10"></textarea>
+            </div>
 
-                <!-- Other Information -->
-                <div class="form-group">
-                    <label for="other">Any other things you want people to know about you</label>
-                    <textarea name="other" id="other"
-                        placeholder="We love doughnuts and coffee when we work! We also do charity work! We have received X amount of awards!"
-                        class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
-                        cols="30" rows="10"></textarea>
-                </div>
+            <!-- 2 Biggest Money Maker -->
+            <div class="form-group">
+                <label for="money-makers">What are your 2 biggest money makers?</label>
+                <textarea name="money-makers" id="money-makers" placeholder="Roofing, Home Remodeling..."
+                    class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
+                    cols="30" rows="10"></textarea>
+            </div>
+
+            <!-- All Services  -->
+            <div class="form-group">
+                <label for="all-services">And what are all the other services you provide, no matter how
+                    small.</label>
+                <textarea name="all-services" id="all-services"
+                    placeholder="Gutter Cleaning, Power Washing, Lawn Mowing, Fabrication, etc..."
+                    class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
+                    cols="30" rows="10"></textarea>
+            </div>
+
+            <!-- Top 3 Qualities -->
+            <div class="form-group">
+                <label for="three-traits">What are 3 qualities that make you better than the competition?</label>
+                <textarea name="three-traits" id="three-traits" placeholder="Quality, Speed, Customer Service"
+                    class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
+                    cols="30" rows="10"></textarea>
+            </div>
+            <!-- About -->
+            <div class="form-group">
+                <label for="about">About you, your company, expertise, philosophy about how you do
+                    business, mission statement, and experience.</label>
+                <textarea name="about" id="about"
+                    placeholder="We are an awesome group of people who do this and that and we think this way about it and that way about this..."
+                    class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
+                    cols="30" rows="10"></textarea>
+            </div>
+
+            <!-- Target Demographic -->
+            <div class="form-group">
+                <label for="target-demographic">Target Demographic</label>
+                <textarea name="target-demographic" id="target-demographic"
+                    placeholder="Everyone aged 30 and up with a disposable income and a home..."
+                    class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
+                    cols="30" rows="10"></textarea>
+            </div>
+
+            <!-- Other Information -->
+            <div class="form-group">
+                <label for="other">Any other things you want people to know about you</label>
+                <textarea name="other" id="other"
+                    placeholder="We love doughnuts and coffee when we work! We also do charity work! We have received X amount of awards!"
+                    class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
+                    cols="30" rows="10"></textarea>
+            </div>
 
 
-                <button class="button px-18" type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
+            <div class="form-group">
+                <label for="other">Anything important missed on this questionnaire? (optional)</label>
+                <textarea name="other" id="other"
+                    placeholder="We love doughnuts and coffee when we work! We also do charity work! We have received X amount of awards!"
+                    class="bg-gray-200 rounded-[0.25rem] lg:min-h-12 p-4 focus:outline-indigo-950 dark:focus:outline-indigo-50"
+                    cols="30" rows="10"></textarea>
+            </div>
+
+            <button class="button px-18" type="submit">Submit</button>
+        </form>
+    </div>
+</section>
 </body>
